@@ -21,7 +21,7 @@ python3 image_client.py -v -i grpc -u localhost:8001 -m blazeface -s NONE frames
 but this doesn't work.
 It ends with the error 
 ```
-inference failed: [StatusCode.INTERNAL] failed to run model 'blazeface_0_cpu
+I1105 02:42:27.139824 1 libtorch_backend.cc:776] isTuple() INTERNAL ASSERT FAILED at "/opt/tritonserver/include/torch/ATen/core/ivalue_inl.h":931, please report a bug to PyTorch. Expected Tuple but got GenericList
 ```
 
 Calling a different model 

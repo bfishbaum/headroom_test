@@ -4,9 +4,10 @@ max_batch_size: 8
 input [
   {
     name: "input__0"
-    data_type: TYPE_INT8 
-	format: FORMAT_NHWC
-    dims: [ 299, 299, 3 ]
+    data_type: TYPE_FP32
+	format: FORMAT_NCHW
+    dims: [ 3, 224, 224 ]
+	reshape { shape: [ 3, 224, 224 ] }
   }
 ]
 output [
