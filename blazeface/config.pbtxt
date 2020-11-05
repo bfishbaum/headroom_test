@@ -7,7 +7,6 @@ input [
     data_type: TYPE_FP32
 	format: FORMAT_NCHW
     dims: [ 3, 224, 224 ]
-	reshape { shape: [ 3, 224, 224 ] }
   }
 ]
 output [
