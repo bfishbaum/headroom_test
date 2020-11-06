@@ -29,3 +29,5 @@ Calling a different model
 python3 image_client.py -i grpc -u localhost:8001 -b 128 -m inception_graphdef -s INCEPTION frames > results.txt
 ```
 works successfully and the results are in results.txt. Tarrance looks most like a potters wheel or a banjo.
+
+To see the blazeface model over the webm, copy `headroom.py` and `video.webm` into the MediaPipePyTorch repo and run `python3 headroom.py` from there.
