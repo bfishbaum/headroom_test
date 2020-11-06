@@ -26,6 +26,6 @@ I1105 02:42:27.139824 1 libtorch_backend.cc:776] isTuple() INTERNAL ASSERT FAILE
 
 Calling a different model 
 ```
-python3 image_client.py -v -i grpc -u localhost:8001 -m inception_graphdef -s INCEPTION frames/frame0.jpg
+python3 image_client.py -i grpc -u localhost:8001 -b 128 -m inception_graphdef -s INCEPTION frames > results.txt
 ```
-works successfully
+works successfully and the results are in results.txt. Tarrance looks most like a potters wheel or a banji.
